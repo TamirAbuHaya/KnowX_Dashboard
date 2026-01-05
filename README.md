@@ -175,13 +175,6 @@ frontend/vite.config.ts
 
 ---
 
-## 📌 Next Steps
-
-- Role-based authentication (Staff / Cadet)
-- File upload & review workflows
-- Search, tags, and filtering
-- Audit logging
-
 ---
 
 Happy coding 🚀
