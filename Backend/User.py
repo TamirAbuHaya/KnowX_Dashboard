@@ -2,31 +2,36 @@ class User:
     """
 
     """
-    def __init__(self, full_name, email, course_num, battalion, platoon=None, team=None):
+    def __init__(self, full_name, email, course_num, role, battalion, platoon=None, team=None):
         self.full_name = full_name
         self.email = email
+        self.course_num = course_num
+        self.role = role #מ"פ, מג"ד, סמג"ד, מפק"ץ, צוער
         self.battalion = battalion
         self.platoon = platoon
         self.team = team
-        self.course_num = course_num
+        self.experience_roles = [] #הדרכתית + פיקודית
 
 
+    def view_files(self):
+        pass
 
-class Staff (User):
-    """
+    def delete_file(self):
+        pass
 
-    """
-    def __init__(self, full_name, email, course_num, staff_role, battalion, platoon=None, team=None):
-        User.__init__(self, full_name, email, battalion, platoon, team, course_num)
-        self.staff_experience_roles = [] #
-        self.staff_role = staff_role #Staff role - platoon_commander, battalion_commander, battalion_second_in_command, team_commander
+    def add_file(self):
+        pass
 
+    def add_experience_role(self, role):
+        pass
 
-class Cadet (User):
-    """
+    def accept_experience_role(self, role):
+        pass
 
-    """
-    def __init__(self, full_name, email, course_num, battalion, platoon=None, team=None):
-        User.__init__(self, full_name, email, battalion, platoon, team, course_num)
-        self.cadet_roles = []
+    def submit_experience_role(self, role):
+        pass
+
+    def search_files(self):
+        pass
+
 
